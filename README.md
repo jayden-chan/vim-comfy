@@ -3,7 +3,7 @@
 *Comfy* is a warm color scheme for Vim inspired by gruvbox.
 
 **NOTE**: This theme only works with versions of Vim / terminals that have
-support for `termguicolors`.
+support for `termguicolors` as well as italics, underline, bold, etc.
 
 ## Installation
 

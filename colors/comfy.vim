@@ -162,12 +162,9 @@ exe 'hi markdownHeadingDelimiter guifg='s:fg
 exe 'hi markdownUrl guifg='s:keyword
 exe 'hi markdownUrlTitleDelimiter guifg='s:func
 exe 'hi markdownIdDeclaration guifg='s:builtin
-
-" call s:HL('markdownLinkText', s:gray, s:none, s:underline)
-
+exe 'hi markdownLinkText guifg='s:fg' gui=underline'
 
 " C Highlighting
-
 exe 'hi cOperator guifg='s:type
 exe 'hi cStructure guifg='s:str
 
