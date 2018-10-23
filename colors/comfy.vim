@@ -140,7 +140,31 @@ exe 'hi htmlStatement guifg='s:keyword
 exe 'hi htmlSpecialTagName guifg='s:keyword
 
 " Markdown Highlighting
-exe 'hi mkdCode guifg='s:builtin
+exe 'hi markdownItalic guifg='s:fg' gui=italic'
+exe 'hi markdownH1 guifg='s:func
+exe 'hi markdownH2 guifg='s:func
+exe 'hi markdownH3 guifg='s:func
+exe 'hi markdownH4 guifg='s:func
+exe 'hi markdownH5 guifg='s:func
+exe 'hi markdownH6 guifg='s:func
+exe 'hi markdownCode guifg='s:str
+exe 'hi markdownCodeBlock guifg='s:str
+exe 'hi markdownCodeDelimiter guifg='s:str
+exe 'hi markdownBlockquote guifg='s:str
+exe 'hi markdownListMarker guifg='s:keyword
+exe 'hi markdownOrderedListMarker guifg='s:comment
+exe 'hi markdownRule guifg='s:comment
+exe 'hi markdownHeadingRule guifg='s:comment
+exe 'hi markdownUrlDelimiter guifg='s:fg
+exe 'hi markdownLinkDelimiter guifg='s:fg
+exe 'hi markdownLinkTextDelimiter guifg='s:fg
+exe 'hi markdownHeadingDelimiter guifg='s:fg
+exe 'hi markdownUrl guifg='s:keyword
+exe 'hi markdownUrlTitleDelimiter guifg='s:func
+exe 'hi markdownIdDeclaration guifg='s:builtin
+
+" call s:HL('markdownLinkText', s:gray, s:none, s:underline)
+
 
 " C Highlighting
 
