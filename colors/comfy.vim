@@ -67,7 +67,7 @@ exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2
 exe 'hi Float guifg='s:const
 exe 'hi Function guifg='s:func
-exe 'hi Identifier guifg='s:type'  gui=italic'
+exe 'hi Identifier guifg='s:type'
 exe 'hi Keyword guifg='s:keyword'  gui=bold'
 exe 'hi Label guifg='s:var
 exe 'hi NonText guifg='s:bg4' guibg='s:bg2
@@ -77,7 +77,7 @@ exe 'hi PreProc guifg='s:keyword
 exe 'hi Special guifg='s:fg
 exe 'hi SpecialKey guifg='s:fg2' guibg='s:bg2
 exe 'hi Statement guifg='s:keyword
-exe 'hi StorageClass guifg='s:type'  gui=italic'
+exe 'hi StorageClass guifg='s:type'
 exe 'hi String guifg='s:str
 exe 'hi Tag guifg='s:keyword
 exe 'hi Title guifg='s:fg'  gui=bold'
@@ -85,7 +85,7 @@ exe 'hi Todo guifg='s:fg' gui=bold'
 exe 'hi Type guifg='s:type
 exe 'hi Underlined   gui=underline'
 
-" Ruby Highlighting
+" Ruby
 exe 'hi rubyAttribute guifg='s:builtin
 exe 'hi rubyLocalVariableOrMethod guifg='s:var
 exe 'hi rubyGlobalVariable guifg='s:var' gui=italic'
@@ -96,20 +96,20 @@ exe 'hi rubyClassDeclaration guifg='s:keyword' gui=bold'
 exe 'hi rubyClass guifg='s:keyword' gui=bold'
 exe 'hi rubyNumber guifg='s:const
 
-" Go Highlighting
+" Go
 exe 'hi goBuiltins guifg='s:builtin
 exe 'hi goDirective guifg='s:keyword
 exe 'hi goConstants guifg='s:const
 exe 'hi goDeclaration guifg='s:func
 exe 'hi goDeclType guifg='s:type
 
-" GitGutter Highlighting
+" GitGutter
 exe 'hi GitGutterAdd guifg='s:func
 exe 'hi GitGutterChange guifg='s:str
 exe 'hi GitGutterDelete guifg='s:warning
 exe 'hi GitGutterChangeDelete guifg='s:warning2
 
-" Java Highlighting
+" Java
 exe 'hi javaAnnotation guifg='s:keyword
 exe 'hi javaDocTags guifg='s:keyword
 exe 'hi javaCommentTitle guifg='s:comment' gui=italic'
@@ -122,7 +122,7 @@ exe 'hi javaParen5 guifg='s:fg
 exe 'hi javaOperator guifg='s:builtin
 exe 'hi javaVarArg guifg='s:builtin
 
-" Javascript Highlighting
+" Javascript
 exe 'hi jsBuiltins guifg='s:builtin
 exe 'hi jsFunction guifg='s:keyword' gui=bold'
 exe 'hi jsGlobalObjects guifg='s:type
@@ -134,7 +134,65 @@ exe 'hi javaScriptNumber guifg='s:var
 exe 'hi javaScriptNull guifg='s:keyword
 exe 'hi javaScriptParens guifg='s:fg
 
-" Html Highlighting
+" YAJS
+exe 'hi javascriptImport guifg='s:keyword
+exe 'hi javascriptExport guifg='s:keyword
+exe 'hi javascriptClassKeyword guifg='s:keyword
+exe 'hi javascriptClassExtends guifg='s:keyword
+exe 'hi javascriptDefault guifg='s:keyword
+exe 'hi javascriptClassName guifg='s:builtin
+exe 'hi javascriptClassSuperName guifg='s:builtin
+exe 'hi javascriptGlobal guifg='s:str
+exe 'hi javascriptEndColons guifg='s:fg
+exe 'hi javascriptFuncArg guifg='s:fg
+exe 'hi javascriptGlobalMethod guifg='s:fg
+exe 'hi javascriptNodeGlobal guifg='s:fg
+exe 'hi javascriptBOMWindowProp guifg='s:fg
+exe 'hi javascriptArrayMethod guifg='s:fg
+exe 'hi javascriptArrayStaticMethod guifg='s:fg
+exe 'hi javascriptCacheMethod guifg='s:fg
+exe 'hi javascriptDateMethod guifg='s:fg
+exe 'hi javascriptMathStaticMethod guifg='s:fg
+exe 'hi javascriptURLUtilsProp guifg='s:fg
+exe 'hi javascriptBOMNavigatorProp guifg='s:fg
+exe 'hi javascriptDOMDocMethod guifg='s:fg
+exe 'hi javascriptDOMDocProp guifg='s:fg
+exe 'hi javascriptBOMLocationMethod guifg='s:fg
+exe 'hi javascriptBOMWindowMethod guifg='s:fg
+exe 'hi javascriptStringMethod guifg='s:fg
+exe 'hi javascriptVariable guifg='s:var
+exe 'hi javascriptIdentifier guifg='s:var
+exe 'hi javascriptClassSuper guifg='s:var
+exe 'hi javascriptFuncKeyword guifg='s:keyword
+exe 'hi javascriptAsyncFunc guifg='s:func
+exe 'hi javascriptClassStatic guifg='s:keyword
+exe 'hi javascriptOperator guifg='s:fg
+exe 'hi javascriptForOperator guifg='s:fg
+exe 'hi javascriptYield guifg='s:fg
+exe 'hi javascriptExceptions guifg='s:warning2
+exe 'hi javascriptMessage guifg='s:warning2
+exe 'hi javascriptTemplateSB guifg='s:keyword
+exe 'hi javascriptTemplateSubstitution guifg='s:fg
+exe 'hi javascriptLabel guifg='s:fg
+exe 'hi javascriptObjectLabel guifg='s:fg
+exe 'hi javascriptPropertyName guifg='s:fg
+exe 'hi javascriptLogicSymbols guifg='s:fg
+exe 'hi javascriptArrowFunc guifg='s:func
+exe 'hi javascriptDocParamName guifg='s:fg
+exe 'hi javascriptDocTags guifg='s:fg
+exe 'hi javascriptDocNotation guifg='s:fg
+exe 'hi javascriptDocParamType guifg='s:fg
+exe 'hi javascriptDocNamedParamType guifg='s:fg
+exe 'hi javascriptBrackets guifg='s:fg
+exe 'hi javascriptDOMElemAttrs guifg='s:fg
+exe 'hi javascriptDOMEventMethod guifg='s:fg
+exe 'hi javascriptDOMNodeMethod guifg='s:fg
+exe 'hi javascriptDOMStorageMethod guifg='s:fg
+exe 'hi javascriptHeadersMethod guifg='s:fg
+exe 'hi javascriptAsyncFuncKeyword guifg='s:warning
+exe 'hi javascriptAwaitFuncKeyword guifg='s:warning
+
+" HTML
 exe 'hi htmlLink guifg='s:var' gui=underline'
 exe 'hi htmlStatement guifg='s:keyword
 exe 'hi htmlSpecialTagName guifg='s:keyword
@@ -168,7 +226,7 @@ exe 'hi markdownLinkText guifg='s:fg' gui=underline'
 exe 'hi cOperator guifg='s:type
 exe 'hi cStructure guifg='s:str
 
-" Python Highlighting
+" Python
 exe 'hi pythonBuiltin guifg='s:builtin
 exe 'hi pythonBuiltinObj guifg='s:builtin
 exe 'hi pythonBuiltinFunc guifg='s:func
@@ -187,7 +245,7 @@ exe 'hi pythonConditional guifg='s:keyword
 exe 'hi pythonRepeat guifg='s:keyword
 exe 'hi pythonDottedName guifg='s:type
 
-" NERDTree Highlighting
+" NERDTree
 exe 'hi NERDTreeDir guifg='s:keyword
 exe 'hi NERDTreeDirSlash guifg='s:keyword
 exe 'hi NERDTreeOpenable guifg='s:warning2
