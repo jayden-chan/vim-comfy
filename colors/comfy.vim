@@ -14,15 +14,14 @@ endif
 set t_Co=256
 let g:colors_name = "comfy"
 
-
-" Define reusable colorvariables.
+" Define palette
 let s:bg       = "#343233" " Grey
 let s:fg       = "#EFDAB9" " Tan
 let s:fg2      = "#EFDAB9" " Tan
 let s:fg3      = "#c9b79b" " Unknown
 let s:fg4      = "#b6a68d" " Unknown
-let s:bg2      = "#343233" " Grey
-let s:bg3      = "#4c494a" " Unknown
+let s:bg2      = "#343233" " Grey (fg)
+let s:bg3      = "#4c494a" " Light Grey
 let s:bg4      = "#656364" " Unknown
 let s:keyword  = "#78AF9F" " Teal
 let s:builtin  = "#659CC8" " Blue
@@ -36,6 +35,7 @@ let s:warning  = "#C13F21" " Red
 let s:warning2 = "#D36E2D" " Orange
 
 exe 'hi Normal guifg='s:fg' guibg='s:bg
+exe 'hi Visual guibg='s:bg4
 exe 'hi Cursor guifg='s:bg' guibg='s:fg
 exe 'hi CursorLine  guibg='s:bg3
 exe 'hi CursorLineNr guibg='s:bg' guifg='s:str
@@ -43,8 +43,9 @@ exe 'hi CursorColumn  guibg='s:bg2
 exe 'hi ColorColumn  guibg='s:bg2
 exe 'hi LineNr guifg='s:fg2' guibg='s:bg2
 exe 'hi VertSplit guifg='s:bg' guibg='s:bg3
-exe 'hi MatchParen guifg='s:warning2'  gui=underline'
+exe 'hi MatchParen guibg='s:fg4' guifg='s:fg'  gui=underline'
 exe 'hi StatusLine guifg='s:fg2' guibg='s:bg3' gui=bold'
+exe 'hi StatusLineNC guibg='s:bg3' gui=bold'
 exe 'hi Pmenu guifg='s:fg' guibg='s:bg2
 exe 'hi PmenuSel  guibg='s:bg3
 exe 'hi IncSearch guifg='s:bg' guibg='s:keyword
