@@ -31,3 +31,8 @@ colorscheme comfy
 
 ### C
 ![](img/C.png)
+
+Font: Hack 13pt
+
+## License
+MIT
