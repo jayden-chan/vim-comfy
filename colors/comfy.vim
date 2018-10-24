@@ -143,7 +143,7 @@ exe 'hi javascriptClassExtends guifg='s:keyword
 exe 'hi javascriptDefault guifg='s:keyword
 exe 'hi javascriptClassName guifg='s:builtin
 exe 'hi javascriptClassSuperName guifg='s:builtin
-exe 'hi javascriptGlobal guifg='s:str
+exe 'hi javascriptGlobal guifg='s:keyword
 exe 'hi javascriptEndColons guifg='s:fg
 exe 'hi javascriptFuncArg guifg='s:fg
 exe 'hi javascriptGlobalMethod guifg='s:fg
@@ -208,7 +208,7 @@ exe 'hi markdownH5 guifg='s:func
 exe 'hi markdownH6 guifg='s:func
 exe 'hi markdownCode guifg='s:str
 exe 'hi markdownCodeBlock guifg='s:str
-exe 'hi markdownCodeDelimiter guifg='s:str
+exe 'hi markdownCodeDelimiter guifg='s:const
 exe 'hi markdownBlockquote guifg='s:str
 exe 'hi markdownListMarker guifg='s:keyword
 exe 'hi markdownOrderedListMarker guifg='s:comment
@@ -225,7 +225,7 @@ exe 'hi markdownLinkText guifg='s:fg' gui=underline'
 
 " C Highlighting
 exe 'hi cOperator guifg='s:keyword
-exe 'hi cStructure guifg='s:str
+exe 'hi cStructure guifg='s:const
 
 " Python
 exe 'hi pythonBuiltin guifg='s:builtin

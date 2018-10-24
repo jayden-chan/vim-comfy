@@ -11,23 +11,22 @@ let g:airline#themes#comfy#palette = {}
 function! airline#themes#comfy#refresh()
     let s:bg       = "#343233" " Grey
     let s:fg       = "#EFDAB9" " Tan
-    let s:fg2      = "#EFDAB9" " Tan
+    let s:fg2      = s:fg      " Tan
     let s:fg3      = "#c9b79b" " Unknown
     let s:fg4      = "#b6a68d" " Unknown
-    let s:bg2      = "#343233" " Grey (bg)
+    let s:bg2      = s:bg      " Grey (fg)
     let s:bg3      = "#4c494a" " Light Grey
-    let s:bg4      = "#656364" " Unknown
+    let s:bg4      = "#656364" " Ligher Grey
     let s:keyword  = "#78AF9F" " Teal
     let s:builtin  = "#659CC8" " Blue
-    let s:const    = "#78AF9F" " Teal
+    let s:const    = "#af78a4" " Purple
     let s:comment  = "#808080" " Grey
     let s:func     = "#84cb88" " Green
-    let s:str      = "#FFD152" " Yellow
+    let s:str      = "#EDBE52" " Yellow
     let s:type     = "#659CC8" " Blue
     let s:var      = "#EFDAB9" " Tan
     let s:warning  = "#C13F21" " Red
     let s:warning2 = "#D36E2D" " Orange
-
 
     let g:airline#themes#comfy#palette.accents = {
                 \ 'red': [ s:warning, '', '', 0 ]
