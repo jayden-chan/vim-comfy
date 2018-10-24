@@ -15,20 +15,20 @@ set t_Co=256
 let g:colors_name = "comfy"
 
 " Define palette
-let s:bg       = "#343233" " Grey
+let s:bg       = "#343233" " Grey#343233
 let s:fg       = "#EFDAB9" " Tan
-let s:fg2      = "#EFDAB9" " Tan
+let s:fg2      = s:fg      " Tan
 let s:fg3      = "#c9b79b" " Unknown
 let s:fg4      = "#b6a68d" " Unknown
-let s:bg2      = "#343233" " Grey (fg)
+let s:bg2      = s:bg      " Grey (fg)
 let s:bg3      = "#4c494a" " Light Grey
-let s:bg4      = "#656364" " Unknown
+let s:bg4      = "#656364" " Ligher Grey
 let s:keyword  = "#78AF9F" " Teal
 let s:builtin  = "#659CC8" " Blue
-let s:const    = "#78AF9F" " Teal
+let s:const    = "#af78a4" " Purple
 let s:comment  = "#808080" " Grey
 let s:func     = "#84cb88" " Green
-let s:str      = "#FFD152" " Yellow
+let s:str      = "#EDBE52" " Yellow
 let s:type     = "#659CC8" " Blue
 let s:var      = "#EFDAB9" " Tan
 let s:warning  = "#C13F21" " Red
@@ -41,14 +41,14 @@ exe 'hi CursorLine  guibg='s:bg3
 exe 'hi CursorLineNr guibg='s:bg' guifg='s:str
 exe 'hi CursorColumn  guibg='s:bg2
 exe 'hi ColorColumn  guibg='s:bg2
-exe 'hi LineNr guifg='s:fg2' guibg='s:bg2
+exe 'hi LineNr guifg='s:bg4' guibg='s:bg2
 exe 'hi VertSplit guifg='s:bg' guibg='s:bg3
 exe 'hi MatchParen guibg='s:fg4' guifg='s:fg'  gui=underline'
 exe 'hi StatusLine guifg='s:fg2' guibg='s:bg3' gui=bold'
 exe 'hi StatusLineNC guibg='s:bg3' gui=bold'
 exe 'hi Pmenu guifg='s:fg' guibg='s:bg2
 exe 'hi PmenuSel  guibg='s:bg3
-exe 'hi IncSearch guifg='s:bg' guibg='s:keyword
+exe 'hi IncSearch guifg='s:fg' guibg='s:bg
 exe 'hi Search   gui=underline'
 exe 'hi Directory guifg='s:const
 exe 'hi Folded guifg='s:fg4' guibg='s:bg
@@ -67,21 +67,21 @@ exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2
 exe 'hi Float guifg='s:const
 exe 'hi Function guifg='s:func
-exe 'hi Identifier guifg='s:type'
+exe 'hi Identifier guifg='s:type
 exe 'hi Keyword guifg='s:keyword'  gui=bold'
 exe 'hi Label guifg='s:var
 exe 'hi NonText guifg='s:bg4' guibg='s:bg2
 exe 'hi Number guifg='s:const
 exe 'hi Operater guifg='s:keyword
 exe 'hi PreProc guifg='s:keyword
-exe 'hi Special guifg='s:fg
+exe 'hi Special guifg='s:const' gui=bold'
 exe 'hi SpecialKey guifg='s:fg2' guibg='s:bg2
 exe 'hi Statement guifg='s:keyword
-exe 'hi StorageClass guifg='s:type'
+exe 'hi StorageClass guifg='s:type
 exe 'hi String guifg='s:str
 exe 'hi Tag guifg='s:keyword
 exe 'hi Title guifg='s:fg'  gui=bold'
-exe 'hi Todo guifg='s:fg' gui=bold'
+exe 'hi Todo guifg='s:fg' guibg=NONE gui=bold'
 exe 'hi Type guifg='s:type
 exe 'hi Underlined   gui=underline'
 
@@ -133,6 +133,7 @@ exe 'hi javaScriptMember guifg='s:var
 exe 'hi javaScriptNumber guifg='s:var
 exe 'hi javaScriptNull guifg='s:keyword
 exe 'hi javaScriptParens guifg='s:fg
+exe 'hi jsDocTags guifg='s:keyword
 
 " YAJS
 exe 'hi javascriptImport guifg='s:keyword
@@ -223,7 +224,7 @@ exe 'hi markdownIdDeclaration guifg='s:builtin
 exe 'hi markdownLinkText guifg='s:fg' gui=underline'
 
 " C Highlighting
-exe 'hi cOperator guifg='s:type
+exe 'hi cOperator guifg='s:keyword
 exe 'hi cStructure guifg='s:str
 
 " Python
