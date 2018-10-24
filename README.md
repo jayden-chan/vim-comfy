@@ -32,6 +32,9 @@ colorscheme comfy
 ### C
 ![](img/C.png)
 
+### Rust
+![](img/Rust.png)
+
 Font: Hack 13pt
 
 ## License
