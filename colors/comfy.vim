@@ -43,7 +43,7 @@ exe 'hi CursorColumn  guibg='s:bg2
 exe 'hi ColorColumn  guibg='s:bg2
 exe 'hi LineNr guifg='s:bg4' guibg='s:bg2
 exe 'hi VertSplit guifg='s:bg' guibg='s:bg3
-exe 'hi MatchParen guibg='s:fg4' guifg='s:fg'  gui=underline'
+exe 'hi MatchParen guibg=NONE guifg='s:type' gui=underline'
 exe 'hi StatusLine guifg='s:fg2' guibg='s:bg3' gui=bold'
 exe 'hi StatusLineNC guibg='s:bg3' gui=bold'
 exe 'hi Pmenu guifg='s:fg' guibg='s:bg2
@@ -67,7 +67,7 @@ exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2
 exe 'hi Float guifg='s:const
 exe 'hi Function guifg='s:func
-exe 'hi Identifier guifg='s:type
+exe 'hi Identifier guifg='s:func
 exe 'hi Keyword guifg='s:keyword'  gui=bold'
 exe 'hi Label guifg='s:var
 exe 'hi NonText guifg='s:bg4' guibg='s:bg2
@@ -76,7 +76,7 @@ exe 'hi Operater guifg='s:keyword
 exe 'hi PreProc guifg='s:keyword
 exe 'hi Special guifg='s:const' gui=bold'
 exe 'hi SpecialKey guifg='s:fg2' guibg='s:bg2
-exe 'hi Statement guifg='s:keyword
+exe 'hi Statement guifg='s:type
 exe 'hi StorageClass guifg='s:type
 exe 'hi String guifg='s:str
 exe 'hi Tag guifg='s:keyword
@@ -136,8 +136,8 @@ exe 'hi javaScriptParens guifg='s:fg
 exe 'hi jsDocTags guifg='s:keyword
 
 " YAJS
-exe 'hi javascriptImport guifg='s:keyword
-exe 'hi javascriptExport guifg='s:keyword
+exe 'hi javascriptImport guifg='s:builtin
+exe 'hi javascriptExport guifg='s:builtin
 exe 'hi javascriptClassKeyword guifg='s:keyword
 exe 'hi javascriptClassExtends guifg='s:keyword
 exe 'hi javascriptDefault guifg='s:keyword
