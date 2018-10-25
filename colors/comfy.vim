@@ -43,7 +43,7 @@ exe 'hi CursorColumn  guibg='s:bg2
 exe 'hi ColorColumn  guibg='s:bg2
 exe 'hi LineNr guifg='s:bg4' guibg='s:bg2
 exe 'hi VertSplit guifg='s:bg' guibg='s:bg3
-exe 'hi MatchParen guibg=NONE guifg='s:type' gui=underline'
+exe 'hi MatchParen guibg=NONE guifg='s:type
 exe 'hi StatusLine guifg='s:fg2' guibg='s:bg3' gui=bold'
 exe 'hi StatusLineNC guibg='s:bg3' gui=bold'
 exe 'hi Pmenu guifg='s:fg' guibg='s:bg2
